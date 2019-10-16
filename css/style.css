@@ -1,3 +1,97 @@
+section .card-img-top {
+  height: 15rem;
+}
+
+/*Googlefont*/
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --Snigle-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "Lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom,
+      #425c5A, #425c5A);
+  --light-gray: rgba(255, 255, 255, 0)
+}
+
 body {
-  background-color: black;
+  font-family: var(--Rubik);
+
+}
+
+
+/* Section - 1 */
+
+.cover {
+  width: 100%;
+  height: 55vmin;
+  background: url(/asset/hero.jpg);
+}
+
+section .cover i {
+  color: gold;
+}
+
+.cover .content {
+  background: rgb(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  padding-top: 19vmin;
+}
+
+.cover .content>h1 {
+  font-family: var(--Rubik);
+  font-size: 6vmin;
+  color: whitesmoke;
+}
+
+.cover .content>p {
+  font-family: var(--Rubik);
+  font-size: 2vmin;
+  color: white;
+}
+
+.cover .content span {
+  color: #C6d663;
+}
+
+/* section 2 */
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.5);
+
+}
+
+.room h1 {
+  color: #C6d663;
+}
+
+.container a {
+  color: #C6d663;
+}
+
+.container .card-title {
+  font-weight: bold;
+}
+
+/* Section-3 */
+
+.carousel-inner>.item>img {
+  width: 300px;
+  height: 360px;
 }
